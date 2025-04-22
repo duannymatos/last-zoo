@@ -1,0 +1,379 @@
+body {
+  overflow-x: hidden;
+}
+
+.row {
+  margin: 0 auto;
+
+}
+
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top:0;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 250%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 105%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.App {
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/lion-background.jpg);  
+  background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed;
+  height: 50vh;
+  position: relative;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin);
+  color: white; */
+}
+
+.logo-last {
+  top: 30px; 
+  left: 30px;
+  position: absolute; 
+  width: auto;
+  height: 170px;
+}
+
+@media (max-width:640px){
+  .logo-last {
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    width: auto;
+    height: 50px;  
+  }
+}
+
+
+.nav-head {
+  border-bottom: 2px solid transparent;;
+  padding: 10px;
+  transition: all 0.6s;
+}
+
+.nav-head:active,
+.nav-head:hover {
+  font-size: 120%;
+  color: #fff;
+  border-bottom:#ff4800 2px solid ;
+}
+
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+  margin-top: 30px;
+}
+
+.login-please {
+  margin-top: 10px;
+}
+
+/* .img-responsive {
+  max-width: 70%;
+  height: auto
+} */
+
+
+.nav-search-btn {
+  color: #2e2e2e;
+  padding: 30px;
+  
+}
+
+.nav-search-btn:link, .nav-search-btn:visited {
+  color: #2e2e2e;
+  text-decoration: none;
+
+}
+
+.nav-search-btn:active, .nav-search-btn:hover {
+  color: #004b7b;
+  font-weight: 400;
+
+}
+
+.btn-search {
+  background: #ff4800;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+}
+.btn-search:link, .btn-search:visited {
+  color: #fff;
+}
+.btn-search:active, .btn-search:hover {
+  background: #ab3000;
+  color: #fff;
+}
+.house-table {
+  margin-top: 50px;
+}
+
+
+.card {
+  width: 75%;
+  opacity: 0.8;
+}
+
+.card-body {
+  position: relative;
+}
+
+.search-table-card {
+  height: 50vh;
+}
+
+/*************************** LOGIN ***************************/
+.login-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(./img/rhino.jpg); 
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-form {
+  top: 250px;
+  
+}
+
+/*************************** DASHBOARD************************/
+
+.container-dashboard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/lion-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.dashboard-card {
+  margin-top: 30px;
+  max-height: 100%;
+  height: 95vh;
+  border-radius: 15px;
+}
+
+/* Dashboard sidebar */
+#sidebar-wrapper {
+z-index: 1;
+position: absolute;
+width: 0px;
+height: 100%;
+overflow-y: hidden;
+overflow-x: hidden;
+background: #e75d01;
+transition: width 500ms;
+opacity: 100%;
+left: 0;
+top: 0;
+vertical-align: top;
+
+}
+
+
+/* Dashboard main area */
+#page-content-wrapper{
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+  transition: all 500ms;
+}
+
+/* Change the width of the sidebar to display it */
+#wrapper.menuDisplayed #sidebar-wrapper{
+  width: 250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+  padding-left: 250px;  
+}
+
+.ionicon-dashboard {
+  font-size: 130%;  
+}
+
+#sidebar-wrapper h4 {
+  margin-top: 30px;
+}
+
+.sidebar-nav {
+  padding: 0;
+  list-style: none;
+  color: #ddd;
+  text-align: left;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 50px;
+  transition: all 0.5s;
+  font-size: 120%;
+  text-decoration: none;
+  
+}
+
+.sidebar-nav li:hover {
+  text-indent: 20px;
+  line-height: 65px;
+  background-color: rgba(255, 255, 255, 0.25);  
+  text-decoration: none;
+}
+
+.sidebar-nav li:last-child {  
+  text-decoration: none;
+  color: #ddd;  
+}
+
+.sidebar-nav li Link:hover {  
+  font-weight: 400;
+}
+
+/************************* FOOTER ******************************/
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(./img/rhino.jpg);   
+  height: 200px;
+  width: 100vw;
+  background-size: cover;     
+  bottom: 0;
+  position: relative;
+}
+
+/**************************** WELCOME *******************************/
+
+.section-welcome .long-copy {
+  margin-bottom: 10px;
+}
+
+.welcome-texts {
+  margin-bottom: 50px;
+}
+
+.section-welcome p {
+  margin: 0px 20px;
+}
+
+.section-welcome h3 {
+  font-weight: 600;
+}
+
+.long-copy {
+  display: block;
+  line-height: 145%;
+  width: 100%; 
+  text-align: center;
+  font-size: 120%;
+}
+
+.box {
+  padding:1%;
+}
+
+.box p {
+  line-height: 145%;
+  text-align: justify;
+}
+
+.icon-big {
+  font-size: 250%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+  
+}
+
+/************************ DOCUMENTATIONS ****************************/
+
+.right-container { 
+  right: 0; 
+  height: 100;
+  position: relative;
+
+}
+
+.documentation-text{
+  color: #fff;
+  width: 80%;
+  margin-top: 130px;
+  margin-left: 100px;
+  font-size: 150%;
+}
+
+.documentation-text h3{
+ font-weight: 600;
+ border-bottom: 1px solid #fff;
+}
+
+.left-container {
+  position: absolute;
+  left:0
+
+}
+
+.section-documentation {
+  width: 100vw;
+  background-color: #e75d01;
+  height: 50vh;
+
+}
